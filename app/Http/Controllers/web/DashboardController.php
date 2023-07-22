@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class DashboardController extends Controller
 {
 
-    public function getTitle()
+    public function getTitleParent()
     {
         return "Dashboard";
     }
@@ -17,8 +17,9 @@ class DashboardController extends Controller
     {
         $data['data'] = [];
         $view = view('dashboard', $data);
-        $put['title_content'] = $this->getTitle();
-        $put['title_top'] = $this->getTitle();
+        $put['title_content'] = 'Home';
+        $put['title_top'] = 'Home';
+        $put['title_parent'] = $this->getTitleParent();
         $put['view_file'] = $view;
 
         return view('template.main', $put);

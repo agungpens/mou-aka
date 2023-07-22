@@ -13,4 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'App\Http\Controllers\web\DashboardController@index');
+
+// Login
+Route::get('/', 'App\Http\Controllers\LoginController@index')->name('login')->middleware('guest');
+Route::post('login', 'App\Http\Controllers\LoginController@authenticate')->middleware('guest');
+Route::get('logout', 'App\Http\Controllers\LoginController@logout')->middleware('auth');
+
+
+// Dashboard
+Route::get('home', 'App\Http\Controllers\web\DashboardController@index')->middleware('auth');
+
+// User
+Route::get('user/{id}', 'App\Http\Controllers\web\UserController@index')->middleware('auth');

@@ -1,105 +1,35 @@
-<aside class="sidebar">
-    <div class="sidebar-start">
-        <div class="sidebar-head">
-            <a href="{{ url('/') }}" class="logo-wrapper" title="Logo AKN PSF">
-                <span class="sr-only">Logo AKN PSF</span>
-                <span class="icon logo" aria-hidden="true">
-                    <img src="{{ asset('asset/img/svg/logo.png') }}" width="50px" alt="">
-                </span>
-                <div class="logo-text">
-                    <span class="logo-title">AKNPSF</span>
-                    <span class="logo-subtitle">MOU SERVICE</span>
-                </div>
+  <!--**********************************
+            Sidebar start
+        ***********************************-->
+  <div class="nk-sidebar">
+      <div class="nk-nav-scroll">
+          <ul class="metismenu" id="menu">
+              <li class="nav-label">MAIN MENU</li>
+              <li>
+                  <a href="{{ url('/') }}" class="active">
+                      <i class="icon-speedometer menu-icon"></i><span class="nav-text">Dashboard</span>
+                  </a>
+              </li>
+              <li>
+                  <a class="has-arrow" hrecm="javascript:void()" aria-expanded="false">
+                      <i class="icon-notebook menu-icon"></i><span class="nav-text">Berkas MOU</span>
+                  </a>
+                  <ul aria-expanded="false">
+                      <li><a href="{{ url('') }}">Pencatatan</a></li>
+                  </ul>
+              </li>
+              <li>
+                  <a class="has-arrow" href="javascript:void()" aria-expanded="false">
+                      <i class="icon-user menu-icon"></i><span class="nav-text">Management User</span>
+                  </a>
+                  <ul aria-expanded="false">
+                      <li><a href="{{ url('') }}">List User</a></li>
+                  </ul>
+              </li>
 
-            </a>
-            <button class="sidebar-toggle transparent-btn" title="Menu" type="button">
-                <span class="sr-only">Toggle menu</span>
-                <span class="icon menu-toggle" aria-hidden="true"></span>
-            </button>
-        </div>
-        <div class="sidebar-body">
-            <span class="system-menu__title">system</span>
-            <ul class="sidebar-body-menu">
-                <li>
-                    <a class="active" href="{{ url('/') }}"><span class="icon home"
-                            aria-hidden="true"></span>Dashboard</a>
-                </li>
-                <li>
-                    <a class="show-cat-btn" href="##">
-                        <span class="icon document" aria-hidden="true"></span>Posts
-                        <span class="category__btn transparent-btn" title="Open list">
-                            <span class="sr-only">Open list</span>
-                            <span class="icon arrow-down" aria-hidden="true"></span>
-                        </span>
-                    </a>
-                    <ul class="cat-sub-menu">
-                        <li>
-                            <a href="posts.html">All Posts</a>
-                        </li>
-                        <li>
-                            <a href="new-post.html">Add new post</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="show-cat-btn" href="##">
-                        <span class="icon folder" aria-hidden="true"></span>Categories
-                        <span class="category__btn transparent-btn" title="Open list">
-                            <span class="sr-only">Open list</span>
-                            <span class="icon arrow-down" aria-hidden="true"></span>
-                        </span>
-                    </a>
-                    <ul class="cat-sub-menu">
-                        <li>
-                            <a href="categories.html">All categories</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="show-cat-btn" href="##">
-                        <span class="icon image" aria-hidden="true"></span>Media
-                        <span class="category__btn transparent-btn" title="Open list">
-                            <span class="sr-only">Open list</span>
-                            <span class="icon arrow-down" aria-hidden="true"></span>
-                        </span>
-                    </a>
-                    <ul class="cat-sub-menu">
-                        <li>
-                            <a href="media-01.html">Media-01</a>
-                        </li>
-                        <li>
-                            <a href="media-02.html">Media-02</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="show-cat-btn" href="##">
-                        <span class="icon paper" aria-hidden="true"></span>Pages
-                        <span class="category__btn transparent-btn" title="Open list">
-                            <span class="sr-only">Open list</span>
-                            <span class="icon arrow-down" aria-hidden="true"></span>
-                        </span>
-                    </a>
-                    <ul class="cat-sub-menu">
-                        <li>
-                            <a href="pages.html">All pages</a>
-                        </li>
-                        <li>
-                            <a href="new-page.html">Add new page</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="comments.html">
-                        <span class="icon message" aria-hidden="true"></span>
-                        Comments
-                    </a>
-                    <span class="msg-counter">7</span>
-                </li>
-            </ul>
-
-
-        </div>
-    </div>
-
-</aside>
+          </ul>
+      </div>
+  </div>
+  <!--**********************************
+            Sidebar end
+        ***********************************-->
